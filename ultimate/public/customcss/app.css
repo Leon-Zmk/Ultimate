@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 #firstpage{
     height:80%;
 }
@@ -62,3 +66,135 @@
     height: 100%;
     object-fit: cover;
 }
+
+#programmsheader{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#storiesfirsttext{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.col-3{
+    width: 200px;
+    height: 200px;
+}
+
+.cardimg{
+    border-radius: 30px;
+}
+
+
+/* success stories grid css */
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 30px;
+    
+}
+.gridcontainer > div{
+    text-align: center;
+    width: 250px;
+    height:250px;
+
+}
+
+
+#howtodowndiv{
+    background-color: #0074bc;
+}
+
+.textgrid{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    margin-top: 100px;
+    height: 100%;
+   padding-left: 150px;
+   padding-right: 150px;
+   margin-bottom: 50px;
+
+    
+}
+
+.circle-badge{
+    border-radius: 50% !important;
+}
+
+#footerboxes{
+    width: 280px;
+    line-height: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.blogpost img{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+
+    .firstpbtntexts > ul >li {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+        font-weight: 700;
+        word-wrap: break-word;
+        padding: 10px 0px 5px 0px;
+        margin-top: 5px;
+        margin-right: 15px;
+    }
+    .gridcontainer{
+       display: flex;
+        flex-direction: column;
+
+    }
+    .gridcontainer > div{
+        text-align: center;
+        width: 100%;
+        order: 2;
+    
+    }
+    
+    .textgrid{
+        order: 0;
+        text-align: center;
+        margin-top: 40px;
+        height: 0px ;
+        padding: 20px;
+        
+        
+    }
+
+    /* This div is not accessing orders because of display block from its parent element
+    that why i make this div display flex and give order 9 */
+    #thatoneproblemelement{
+        display: flex;
+        order: 9;
+    }
+
+    #downloadtext{
+        font-size: 15px !important;
+    }
+
+    #footerboxes{
+        width: 100%;
+        line-height: 10px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+   
+}
+
+/* end success stories grid layout css */

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +24,26 @@ Auth::routes();
 Route::get('/home',function(){
     return view("frontend.index");
 } )->name('home');
+
+
+Route::middleware("auth")->prefix("admin")->group(function(){
+    Route::get("/",function(){
+        return view("dashboard.layouts.master");
+    })->name("admin");
+
+    Route::get("/postcreate",[PostController::class,"create"])->name("postcreate");
+    Route::post("/poststore",[PostController::class,"store"])->name("poststore");
+    Route::get("/postlist",[PostController::class,"index"])->name("postlist");
+    Route::get("/postedit/{id}",[PostController::class,"edit"])->name("postedit");
+    Route::post("/postupdate",[PostController::class,"update"])->name("postupdate");
+    Route::post("/postdelete",[PostController::class,"destroy"])->name("postdelete");
+});
+
+
+    Route::get("blog",[BlogController::class,"index"])->name('blog');
+    Route::get("blog/postdetail/{id}",[BlogController::class,"detail"])->name("detail");
+    
+
+
+
+
