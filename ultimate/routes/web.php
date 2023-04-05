@@ -15,19 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
+
+Route::group(['prefix' => "{locale}"],function(){
+    Route::get('/',function(){
+        return view("frontend.index");
+    } )->middleware("setLocale");
+    
 });
 
 Auth::routes();
 
-Route::get('/home',function(){
-    return view("frontend.index");
-} )->name('home');
 
 
+    
 Route::middleware("auth")->prefix("admin")->group(function(){
-    Route::get("/",function(){
+    Route::get("/admindashboard",function(){
         return view("dashboard.layouts.master");
     })->name("admin");
 

@@ -23,7 +23,17 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Membership</a>
           </li>
+
+         
         </ul>
+        <li class="nav-item dropdown" style="list-style-type: none">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{app()->getLocale() == "en" ? 'en' : 'mm'}} <i class="fa fa-globe"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{url(app()->getLocale() == "en"? 'mm' : 'en')}}">{{app()->getLocale() == "en"? 'mm' : 'en'}}</a></li>
+          </ul>
+        </li>
         
       </div>
     </div>

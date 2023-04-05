@@ -19,9 +19,9 @@
             
                 <div class="col-12 col-md-5" id="col1textside" >
                    <div class="p-5 mt-4">
-                    <h3 style="color:#fdb813;">Shop For Your Happiness</h3>
-                    <h4 class="text-white my-3">ကိုယ့် ကျမ်းမာရေးကိုယ့် လက်ထဲမှာ ထားရှိဖို့ ကျမ်းမာရေးအသိပညာလေ့လာပါ။</h4>
-                    <button class="mt-4 p-3 broder-0" id="stbtn" >Getting Started</button>
+                    <h3 style="color:#fdb813;">@lang('frontend.sec1title')</h3>
+                    <h4 class="text-white my-3">@lang('frontend.sec1des')</h4>
+                    <button class="mt-4 p-3 broder-0" id="stbtn" >@lang('frontend.sec1btn')</button>
                    </div>
                 </div>
                 <div class="col-12 col-md-7  p-0" id="">
@@ -50,14 +50,14 @@
         <div class="row">
             <div class="col-12 mb-5">
                <div class="" id="secdivheader">
-                <h1>The Most Effective Lifestyle Transformation program on the earth</h1>
+                <h1>@lang('frontend.sec2title')</h1>
                </div>
             </div>
             <div class="col-12">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-12 col-md-5 p-md-5 " id="secdivtextside">
                         <p>Watch:</p>
-                        <p>U myint Htoo talks about Ultimate Lifestyle changing his health</p>
+                        <p>@lang('frontend.sec2des')</p>
                     </div>
                     <div class="col-12 col-md-7" id="">
                         <video id="svideo" loop autoplay="autoplay" muted>
@@ -78,7 +78,7 @@
         <div class="row justify-content-center">
             <div class="col-12 ">
                <div class="d-flex justify-content-between">
-                <h1 id="programmsheader" class="mb-4">Life Style Programs</h1>
+                <h1 id="programmsheader" class="mb-4">@lang('frontend.sec3title')</h1>
                 <a href="{{route("blog")}}">Read More >></a href="{{route("blog")}}">
                </div>
             </div>
@@ -142,7 +142,7 @@
     <div class="container">
         
        <div class="row">
-           <h1 class="text-center mt-5" id="storyheader">Our Success Stories</h1>
+           <h1 class="text-center mt-5" id="storyheader">@lang('frontend.sec4title')</h1>
            <div class="gridcontainer">
            
                 <div id="thatoneproblemelement">
@@ -151,7 +151,7 @@
                 <div class="textgrid w-100" >
                     <h1>799</h1>
                     <h3 style="font-size: 30px;font-weight: 700;">Stories Of Success</h3>
-                    <p style="font-size:15px;font-weight:700">Ultimate Lifestyle has some of the highest rate in preventing and reversing choronic disease</p>
+                    <p style="font-size:15px;font-weight:700">@lang('frontend.sec4des')</p>
                     <button class="btn p-3 text-white" style="background-color:#0074bc; width:200px;font-size:20px;">Read Our Stories</button>
                 </div>
                 <div class="">
@@ -184,19 +184,19 @@
 
     {{-- fourth div end --}}
 
-    {{-- 5th div  --}}
-
+    {{-- 5th div Application Installation လုပ်ရန်အောင်တွင်နှိပ်ပါ"
+Ultimate Lifestyle မှာ ဘယ်လိုလေ့လာမလဲ --}}
         <div class="container-fluid vh-100 mt-5 p-4 p-md-5" id="howtodowndiv">
             <div class="row justify-content-center align-items-center mt-5 mt-md-0">
                 <div class="col-12">
-                    <h1 class="text-center text-white mb-5">Ultimate Lifestyle မှာ ဘယ်လိုလေ့လာမလဲ</h1>
+                    <h1 class="text-center text-white mb-5">@lang('frontend.sec5title')</h1>
                 </div>
-                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">1</span>ကိုယ့် phone ထဲသို့ ultimate lifestyle application ကို install လုပ်ပါ"</div>
-                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">2</span>ကိုယ့် phone ထဲသို့ ultimate lifestyle application ကို install လုပ်ပါ"</div>
-                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">3</span>ကိုယ့် phone ထဲသို့ ultimate lifestyle application ကို install လုပ်ပါ"</div>
-                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">4</span>ကိုယ့် phone ထဲသို့ ultimate lifestyle application ကို install လုပ်ပါ"</div>
+                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">1</span> @lang('frontend.downinst')</div>
+                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">2</span> @lang('frontend.downinst')</div>
+                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">3</span> @lang('frontend.downinst')</div>
+                <div class="col-6 h2 my-4 text-white text-center" id="downloadtext"> <span class="badge  me-4 circle-badge bg-white badge" style="color: #0074bc;">4</span> @lang('frontend.downinst')</div>
                 <div class="col-12 mt-5">
-                    <h4 class="text-center text-white">Application Installation လုပ်ရန်အောင်တွင်နှိပ်ပါ"</h4>
+                    <h4 class="text-center text-white">@lang('frontend.howtoinstall')</h4>
                 </div>
                <div class="row align-items-center justify-content-center">
                 <div class="col-6 col-md-4">
